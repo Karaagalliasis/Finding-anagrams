@@ -1,0 +1,31 @@
+# Check if two words are anagrams 
+# Example:
+# find_anagrams("hello", "check") --> False
+# find_anagrams("below", "elbow") --> True
+
+
+def find_anagram(word, anagram):
+    word1="below"
+    word2="elbow"
+    word1_anagram=sorted(word1)
+    word2_anagram=sorted(word2)
+    
+    if word1_anagram == word2_anagram :
+            return True
+    else:
+            return False
+print(find_anagram("Hello","Check"))
+
+def find_anagram(word, anagram):
+    word1="Hello"
+    word2="Check"
+    word1_anagram=sorted(word1)
+    word2_anagram=sorted(word2)
+    
+    if word1_anagram == word2_anagram :
+            return True
+    else:
+            return False
+print(find_anagram("below","elbow"))   
+
+
